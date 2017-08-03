@@ -9,7 +9,10 @@ COLOR HEX CODES:
 
 * {
   box-sizing: border-box;
+  font-family: 'Ropa Sans', sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans&effect=3d");
 
 body {
   background-color: #ABF5FF;
@@ -24,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5em;
   color: white;
   text-shadow: 2px 2px 1px black;
   line-height: 1em;
@@ -71,17 +74,35 @@ h2 {
   border: 5px solid black;
   border-radius: 5%;
   padding: 20px 0px 20px 0px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 1px 10px 1px;
   width: 100%;
+  box-shadow: 1px 1px 5px black;
 }
 
-.sectionsWrapper {
+.websec li {
+  list-style: none;
+}
+
+.sectionsWrapper, .pageWrapper {
   width: 100%;
   height: auto;
   display: inline-block;
 }
 
-/*TABLET*/
+.resumePaper {
+  background-color: white;
+  box-shadow: inset 0px 0px 10px black;
+  width: 90%;
+  padding: 50px 0px 100px 0px;
+  border: 20px inset white;
+}
+
+#contactMe,
+#contactForm {
+  min-height: 230px;
+}
+
+/*-------TABLET-------*/
 
 @media screen and (min-width: 426px){
   .nav li {
@@ -93,61 +114,61 @@ h2 {
   .websec {
     min-height: 145px;
     display: inline-block;
+    width: 45%;
+    float: left;
   }
 
-  .sectionsWrapper {
+  .sectionsWrapper, .pageWrapper {
     padding-left: 3%;
   }
 
-/*HOME*/
-
-  .home,
-  .biography,
-  .resume {
-    width: 45%;
-    float: left;
-  }
-
-  .codepen,
-  .gallery,
-  .contact {
-    width: 45%;
-    float: left;
-  }
+  /*HOME*/
 
   /*BIOGRAPHY*/
 
 .earlyChildhood,
 .education{
-  width: 45%;
-  float: left;
-  height: 35%
+  min-height: 200px;
 
 }
 
 .hobbies,
 .lifeGoals{
-  width: 45%;
-  float: left;
-  height: 35%
-}
+  min-height: 200px;
 }
 
+/*CODEPEN*/
 
+.w1,
+.w2,
+.w3{
+  min-height: 350px;
+}
 
-
+.w4,
+.w5{
+  min-height: 350px;
+}
 
 /*RESUME*/
-/*CODEPEN*/
+
+
 /*GALLERY*/
+
 /*CONTACT*/
 
-/*DESKTOP*/
+}
+
+
+
+/*-------DESKTOP-------*/
 
 @media screen and (min-width: 1023px) {
   .nav li{
     width: 15%;
   }
+
+  /*HOME*/
 
   .columns {
     width: 32%;
@@ -158,11 +179,92 @@ h2 {
   .websec {
     width: 97%;
   }
+
+  #contactMe,
+  #contactForm {
+    display: inline-block;
+    width: 45%;
+    float: left;
+  }
+
+  /*BIOGRAPHY*/
+
+  .earlyChildhood,
+  .education{
+  width: 47%;
+  float: left;
+  height: 35%;
+
+  }
+
+  .hobbies,
+  .lifeGoals{
+  width: 47%;
+  float: left;
+  height: 35%;
+  }
+
+  /*RESUME*/
+  /*CODEPEN*/
+
+  .w1,
+  .w2,
+  .w3{
+    width: 48%;
+    float: left;
+    min-height: 350px;
+  }
+
+  .w4,
+  .w5{
+    width: 48%;
+    float: left;
+    min-height: 350px;
+  }
+
+  /*GALLERY*/
+  /*CONTACT*/
+
+}
+
+.w1,
+.w2,
+.w3,
+.w4,
+.w5 {
+  min-height: 375px;
+}
+
+.websec a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.w1:hover,
+.w2:hover,
+.w3:hover,
+.w4:hover,
+.w5:hover {
+  background-image:url("../img/codepenlogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+  background-color: grey;
 }
 
 figure img {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 80%;
+  min-height: 350px;
+}
+
+figure img:hover {
+  min-width: 100%;
+}
+
+figcaption {
+  font-size: 2em;
+  margin: 30px 0px 30px 0px;
 }
 
 footer {
