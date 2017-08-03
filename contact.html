@@ -6,9 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ropa+Sans&effect=3d">
+    <script src="js/scripts.js"></script>
     <header>
       <div class="banner">
-      <h1 class="font-effect-3d">Contact</h1>
+      <h1 class="font-effect-3d">Mickey Hernandez Contact</h1>
         <nav class="nav">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -30,18 +31,18 @@
   </div>
     <div class="websec" id="contactForm">
     <h2>Contact Form</h2>
-    <form method="get" action="">
+    <form method="get" action="" onSubmit="validate()">
       <div>
       <label for="name">Name:</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name"/>
     </div>
     <div>
       <label for="email">Email:</label>
-      <input type="text" name="email" id="email">
+      <input type="text" name="email" id="email"/>
     </div>
     <div>
       <label for="phone">Phone:</label>
-      <input type="text" name="phone" id="phone">
+      <input type="text" name="phone" id="phone"/>
     </div>
     <div>
       <label for="company">Company:</label>
@@ -50,6 +51,9 @@
     <div>
       <label for="name">Comment/Question:</label>
       <input type="text" name="commentquestion" id="commentquestion">
+    </div>
+    <div>
+      <input type="submit" value="Submit" name="submit">
     </div>
     </form>
   </div>

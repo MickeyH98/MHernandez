@@ -70,7 +70,7 @@ h2 {
 }
 
 .websec {
-  background-color: #90E8DA;
+  background-color: lightblue;
   border: 5px solid black;
   border-radius: 5%;
   padding: 20px 0px 20px 0px;
@@ -99,7 +99,7 @@ h2 {
 
 #contactMe,
 #contactForm {
-  min-height: 230px;
+  min-height: 250px;
 }
 
 /*-------TABLET-------*/
