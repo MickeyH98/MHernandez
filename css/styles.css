@@ -1,0 +1,173 @@
+/*
+COLOR HEX CODES:
+#9EC0FF purple
+#90C6E8
+#ABF5FF lightblue
+#90E8DA
+#9EFFD4 green
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ABF5FF;
+  text-align: center;
+  line-height: 1.25em;
+}
+
+.pageWrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding-top:75px;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 30px 0px 30px 0px;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 20%;
+  height: 25%;
+  max-height: 30%;
+  margin-bottom: 50px;
+}
+
+.nav {
+  padding-top: 225px;
+}
+
+.nav li {
+  display: inline-block;
+  background-color: #9EC0FF;
+  border: 1px solid blue;
+  box-shadow: 0px 3px 5px black;
+  width: 100%;
+}
+
+.nav li a {
+  font-size: 14px;
+
+}
+
+.nav li:hover {
+  background-color: #90C6E8;
+}
+
+.websec {
+  background-color: #90E8DA;
+  border: 5px solid black;
+  border-radius: 5%;
+  padding: 20px 0px 20px 0px;
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+}
+
+.sectionsWrapper {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 426px){
+  .nav li {
+    padding:0px;
+    margin:0px;
+    width: 32%;
+  }
+
+  .websec {
+    min-height: 145px;
+    display: inline-block;
+  }
+
+  .sectionsWrapper {
+    padding-left: 3%;
+  }
+
+/*HOME*/
+
+  .home,
+  .biography,
+  .resume {
+    width: 45%;
+    float: left;
+  }
+
+  .codepen,
+  .gallery,
+  .contact {
+    width: 45%;
+    float: left;
+  }
+
+  /*BIOGRAPHY*/
+
+.earlyChildhood,
+.education{
+  width: 45%;
+  float: left;
+  height: 35%
+
+}
+
+.hobbies,
+.lifeGoals{
+  width: 45%;
+  float: left;
+  height: 35%
+}
+}
+
+
+
+
+
+/*RESUME*/
+/*CODEPEN*/
+/*GALLERY*/
+/*CONTACT*/
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1023px) {
+  .nav li{
+    width: 15%;
+  }
+
+  .columns {
+    width: 32%;
+    float: left;
+    overflow:auto;
+  }
+
+  .websec {
+    width: 97%;
+  }
+}
+
+figure img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: grey;
+  font-size: .75em;
+  clear:both;
+}
