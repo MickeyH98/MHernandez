@@ -1,0 +1,655 @@
+/*
+COLORS:
+#178EB3 lightblue
+#BF4467 red
+#D9B866 yellow
+#21BD92 green
+#8A4CBB purple
+#CB7947 orange
+#1267AF blue
+#052D3F darkblue background
+*/
+
+body {
+  background-color: #052D3F;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  z-index: 100;
+  position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navHeader {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  font-size: 3em;
+  color: white;
+  transition: 250ms;
+  float: left;
+  width: 100%;
+}
+
+#navHeader:hover {
+  text-shadow: none;
+  color: #BFD8D7;
+}
+
+.banner {
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-color: #1C3E7F;
+  margin-bottom: 50px;
+  box-shadow: 0 9px 10px 1px black;
+  float: left;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*NAV*/
+
+.nav {
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+
+.nav li {
+  float: left;
+  width: 100%;
+  height: 30px;
+  font-size: 1.5em;
+  line-height: 100%;
+  transition: 300ms;
+  padding-bottom: 5px;
+}
+
+.nav li:hover {
+  color: #BFD8D7;
+}
+
+.biographyNav,
+.resumeNav,
+.codepenNav,
+.contactNav {
+  color: white;
+}
+
+.nav .selected {
+  color: #6da5ff;
+}
+
+/*CONTENT*/
+
+.pageWrapper {
+  float: left;
+  margin-top: 275px;
+  width: 100vw;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.sectionsWrapper {
+  width: 100%;
+  float: left;
+}
+
+.participationWrapper {
+  width: 100%;
+  float: left;
+  background-color: blue;
+}
+
+.websec {
+  padding: 200px 0;
+  width: 100%;
+  margin: 40px 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  float: left;
+  position: relative;
+}
+
+.websec h3,
+.websec p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*perfectly center*/
+  left: 0;
+  font-size: 1em;
+  transition: 1000ms;
+  width: 100%;
+  float: left;
+}
+
+.websec h3 {
+  font-size: 2em;
+  color: black;
+}
+
+.websec p {
+  opacity: 0;
+  line-height: 1em;
+}
+
+.websec:hover {
+  font-size: 4em;
+  color: black;
+}
+
+.websec:hover h3 {
+  opacity: 0;
+}
+
+.websec:hover p {
+  opacity: 1;
+}
+
+.websec li {
+  list-style: none;
+}
+
+#homeHeader {
+  background-color: #BFD8D7;
+  width: 100%;
+  padding: 200px 0;
+  margin: 40px 0;
+  float: left;
+  font-size: 2em;
+  position: relative;
+  color: black;
+}
+
+#homeIntro {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%); /*perfectly center*/
+  transition: 1000ms;
+  font-size: 2em;
+}
+
+#homeDesc {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%); /*perfectly center*/
+  transition: 1000ms;
+}
+
+#homeHeader:hover #homeIntro {
+  opacity: 0;
+  font-size: 3em;
+  line-height: 2em;
+}
+
+#homeHeader:hover #homeDesc {
+  opacity: 1;
+}
+
+.biography {
+  background-color: #BFD8D7;
+}
+
+.resume {
+  background-color: #BFD8D7;
+}
+
+.codepen {
+  background-color: #BFD8D7;
+}
+
+.contact {
+  background-color: #BFD8D7;
+}
+
+/*RESUME*/
+
+.resumePaper {
+  background-color: #F7FAFF;
+  width: 100%;
+  padding: 50px 0px;
+  box-sizing: border-box;
+  transition: 1000ms;
+  text-align: left;
+  float: left;
+}
+
+.resumePaper h2 {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 20px;
+  border-top: solid 3px #BFD8D7;
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px 0;
+  float: left;
+}
+
+.resumePaper h2:first-of-type {
+  border-top: solid 30px #BFD8D7;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 3em;
+}
+
+.resumePaper p {
+  line-height: 1.5em;
+  width: 90%;
+  margin-left: 5%;
+  float: left;
+}
+
+.resumePaper h3 {
+  width: 90%;
+  margin-left: 5%;
+  float: left;
+}
+
+#noList li {
+  list-style: none;
+  margin-left: 0;
+  width: 100%;
+  float: left;
+}
+
+.resumePaper ul {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.resumePaper ul li {
+  float: left;
+  line-height: 1.5em;
+  width: 100%;
+  margin-left: 4%;
+}
+
+#twoColumns li {
+  width: 40%;
+  margin-left: 4%;
+  float: left;
+  line-height: 1.5em;
+}
+
+/*BIOGRAPHY*/
+
+.bioSec {
+  width: 100%;
+  float: left;
+  background-color: #BFD8D7;
+  margin: 20px 0;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: black;
+  /*text-shadow: 1px 1px 5px black;*/
+  height: 225px;
+  position: relative;
+}
+
+#shellfie {
+  height: 400px;
+  border-radius: 100%;
+  margin: 25px 0;
+}
+
+.bioSecHeader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5em;
+  transition: 1000ms;
+}
+
+.bioSecHeader h2 {
+  line-height: 225px;
+  transition: 1000ms;
+}
+
+.bioSecContent {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%); /*perfectly center*/
+}
+
+.bioSec p {
+  opacity: 0;
+  transition: 1000ms;
+}
+
+.bioSec:hover h2 {
+  opacity: 0;
+  font-size: 2.5em;
+}
+
+.bioSec:hover p {
+  opacity: 1;
+}
+
+/*CONTACT*/
+
+.contactWrapper {
+  width: 100%;
+  float: left;
+  transition: 1000ms;
+}
+
+.contactWrapper h3 {
+  font-size: 2em;
+  color: black;
+  /*text-shadow: 1px 1px 5px black;*/
+  padding: 10px 0;
+}
+
+#contactMe {
+  background-color: #BFD8D7;
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0;
+  float: left;
+  line-height: 3em;
+}
+
+#contactMe h2 {
+  font-size: 3em;
+  color: black;
+  /*text-shadow: 1px 1px 5px black;*/
+  padding: 20px 0;
+}
+
+#contactForm {
+  float: left;
+  width: 100%;
+  background-color: #BFD8D7;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.fieldWrapper {
+  width: 60%;
+  margin: 30px 20%;
+  float: left;
+  height: 40px;
+  overflow: hidden;
+}
+
+.fieldWrapper label {
+  float: left;
+  width: 30%;
+  background-color: white;
+  padding: 4px 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 1em;
+}
+
+.fieldWrapper input {
+  float: left;
+  width: 70%;
+  border: none;
+  background-color: white;
+  padding: 6px 0;
+  font-size: 1.5em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  transition: 500ms;
+}
+
+.fieldWrapper input:focus {
+  outline: none;
+  background-color: lightgrey;
+}
+
+#submitFormButton {
+  width: 20%;
+  margin-top: 40px;
+  border: none;
+  background-color: white;
+  padding: 5px 0;
+  border-radius: 10px;
+  font-size: 1.25em;
+  transition: 500ms;
+}
+
+#submitFormButton:hover {
+  background-color: lightgrey;
+}
+
+#submitFormButton:focus {
+  outline: none;
+  background-color: lightgrey;
+}
+
+/*CODEPEN*/
+
+.week {
+  width: 100%;
+  float: left;
+  background-color: #BFD8D7;
+  margin: 20px 0;
+  line-height: 1.5em;
+  color: black;
+  /*text-shadow: 1px 1px 5px black;*/
+  padding: 10px 0;
+  padding-bottom: 20px;
+  transition: 1000ms;
+}
+
+.week h2 {
+  font-size: 2em;
+  padding: 10px 0;
+}
+
+/*FOOTER*/
+
+footer {
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-color: #1E407D;
+  font-size: .75em;
+  float: left;
+  width: 100%;
+  box-shadow: 0 -9px 10px 1px black;
+}
+
+.footerLinks {
+  width: 50%;
+  float: left;
+}
+
+.footerLinks div {
+  float: left;
+  transition: 250ms;
+  margin: 5px 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-left: 10%;
+}
+
+.footerLinks div:hover {
+  transform: rotate(20deg);
+}
+
+.linkedIn {
+  background-image: url("http://icons.iconarchive.com/icons/sicons/flat-shadow-social/512/linkedin-icon.png");
+  float: left;
+  background-position: center;
+  background-size: contain;
+}
+
+.footerLinks .linkedIn:hover {
+  color: #BFD8D7;
+}
+
+.road2Hire {
+  background-image: url("https://pbs.twimg.com/profile_images/829431121586880513/UGqLggLr.jpg");
+  float: left;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.footerLinks .road2Hire:hover {
+  color: #BFD8D7;
+}
+
+.footerText {
+  float: left;
+  width: 50%;
+}
+
+.footerText p {
+  float: right;
+  color: white;
+  padding: 20px 0;
+  font-size: 1.25em;
+  margin-right: 10%;
+}
+
+/*-------TABLET-------*/
+
+@media screen and (min-width: 800px){
+
+  header {
+    height: 80px;
+  }
+
+  #navHeader {
+    width: 35%;
+    font-size: 1.85em;
+  }
+
+  #homeDesc {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .pageWrapper {
+    margin-top: 100px;
+  }
+
+  .nav {
+    width: 65%;
+    padding: 0;
+  }
+
+  .nav li {
+    margin:0px;
+    width: 25%;
+  }
+
+  .bioSec {
+    width: 90%;
+    margin: 20px 5%;
+    border-radius: 10px;
+  }
+
+  .contactWrapper {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  #contactMe,
+  #contactForm {
+    border-radius: 10px;
+  }
+
+  .error {
+    background-color: red;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 30px;
+    float: left;
+  }
+
+  .footerLinks p {
+    width: 50%;
+    padding: 5px 0;
+    background-color: red;
+  }
+
+  /*HOME*/
+
+  /*BIOGRAPHY*/
+
+  /*CODEPEN*/
+
+  .week {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+  }
+
+  /*RESUME*/
+
+  .resumePaper {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+  }
+
+  #halfDiv {
+    width: 45%;
+    margin-left: 5%;
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  /*GALLERY*/
+
+  /*CONTACT*/
+
+  .fieldWrapper label {
+    font-size: 1.25em;
+  }
+
+/*-------DESKTOP-------*/
+
+@media screen and (min-width: 1200px) {
+
+  /*HOME*/
+
+  /*BIOGRAPHY*/
+
+  .bioSec {
+    width: 70%;
+    margin: 20px 15%;
+  }
+
+  /*RESUME*/
+
+  .resumePaper {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 150px;
+  }
+
+  /*CODEPEN*/
+
+  .week {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+  }
+
+  /*CONTACT*/
+
+  .contactWrapper {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+}
