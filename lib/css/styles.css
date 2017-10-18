@@ -432,6 +432,68 @@ a {
   background-color: lightgrey;
 }
 
+.errorMessageWrapper {
+  width: 60%;
+  position: fixed;
+  top: 35%;
+  margin: 0 20%;
+  background-color: red;
+  border-radius: 10px;
+  display: block;
+  transition: 1000ms;
+}
+.errorMessage {
+  color: black;
+  font-size: 1.25em;
+  padding: 10px 0;
+}
+
+.successMessageWrapper {
+  width: 60%;
+  position: fixed;
+  top: 35%;
+  margin: 0 20%;
+  background-color: green;
+  border-radius: 10px;
+  display: block;
+  transition: 1000ms;
+}
+.sucessMessage {
+  color: black;
+  font-size: 1.25em;
+  padding: 10px 0;
+}
+
+#successButton {
+  width: 40%;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin: 10px 0;
+  transition: 250ms;
+}
+
+#successButton:hover {
+  background-color: lightgrey;
+}
+
+#errorButton {
+  width: 40%;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin: 10px 0;
+  transition: 250ms;
+}
+
+#errorButton:hover {
+  background-color: lightgrey;
+}
+
 /*CODEPEN*/
 
 .week {
@@ -566,13 +628,12 @@ footer {
     border-radius: 10px;
   }
 
-  .error {
-    background-color: red;
-    color: white;
-    display: block;
-    width: 100%;
-    height: 30px;
-    float: left;
+  .errorMessageWrapper {
+    margin: 0 15%;
+  }
+
+  .successMessageWrapper {
+    margin: 0 15%;
   }
 
   .footerLinks p {
@@ -650,6 +711,14 @@ footer {
   .contactWrapper {
     width: 70%;
     margin: 0 15%;
+  }
+
+  .errorMessageWrapper {
+    margin: 0 5%;
+  }
+
+  .successMessageWrapper {
+    margin: 0 5%;
   }
 
 }
