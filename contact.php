@@ -21,7 +21,7 @@
         </div>
         <div id="contactForm">
           <h3>Contact Form</h3>
-          <form id="formyForm">
+          <form id="formyForm" action="formProcess.php" method="post">
 
             <div class="fieldWrapper">
               <label for="name">Name:</label>
@@ -31,11 +31,6 @@
             <div class="fieldWrapper">
               <label for="email">Email:</label>
               <input type="email" name="email" id="email" required>
-            </div>
-
-            <div class="fieldWrapper">
-              <label for="phone">Phone:</label>
-              <input type="text" name="phone" id="phone" required>
             </div>
 
             <div class="fieldWrapper">
