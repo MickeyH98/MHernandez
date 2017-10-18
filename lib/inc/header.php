@@ -1,3 +1,4 @@
+<?php error_reporting(0); ?>
 <header>
   <div class="banner">
   <a href="index.php"><h1 id="navHeader">Mickey Hernandez</h1></a>
