@@ -1,7 +1,9 @@
 <?php error_reporting(0); ?>
 <header>
   <div class="banner">
-  <a href="index.php"><h1 id="navHeader">Mickey Hernandez</h1></a>
+    <div class="headerLogo">
+      <a href="index.php"><img id="navHeader" src="lib/img/illumicky.png"></a>
+    </div>
     <nav class="nav">
       <ul>
         <a href="biography.php"><li class="biographyNav">Biography</li></a>

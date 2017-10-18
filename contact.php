@@ -88,7 +88,7 @@ if(!empty($_POST["submit"])){ //when form submitted
       <div class="contactWrapper">
         <div id="contactMe">
           <h2>Thanks for your interest!</h2>
-          <h3>You may email me at mickeyh1998@gmail.com</h3>
+          <h3>You may email me at <a id="emailLink" href="mailto:mickeyh1998@gmail.com?subject=PortfolioInquiry">mickeyh1998@gmail.com</a></h3>
         </div>
         <div id="contactForm">
           <h3>Contact Form</h3>
