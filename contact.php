@@ -1,7 +1,6 @@
 <?php
 
 if(!empty($_POST["submit"])){ //when form submitted
-  var_dump($_POST);
 
   //create shorthand variables
   $name = $_POST["name"];
@@ -28,7 +27,6 @@ if(!empty($_POST["submit"])){ //when form submitted
     //build message
     $message = '
       Portfolio Inquiry
-
       Name: ' . $name . '
       Email: ' . $email . '
       Company: ' . $company . '
