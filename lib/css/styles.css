@@ -19,7 +19,7 @@ body {
 
 header {
   width: 100%;
-  height: 200px;
+  height: 100px;
   z-index: 100;
   position: fixed;
     top: 0;
@@ -27,23 +27,23 @@ header {
 }
 
 .headerLogo {
-  width: 100%;
-  height: 40px;
-  margin: 5px 0;
+  width: 20%;
   transition: 250ms;
+  float: left;
 }
 
 #navHeader {
-  margin: 0 auto;
   font-size: 3em;
   color: white;
   transition: 250ms;
-  width: 50px;
-  height: 50px;
+  height: 25px;
+  transform: scale(2);
+  margin-top: 5px;
+  position: relative;
 }
 
 .headerLogo:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 #navHeader:hover {
@@ -54,7 +54,7 @@ header {
 .banner {
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
   background-color: #1C3E7F;
-  margin-bottom: 50px;
+  padding: 20px 0 30px 0;
   box-shadow: 0 9px 10px 1px black;
   float: left;
   width: 100%;
@@ -69,30 +69,26 @@ a {
 
 .nav {
   float: left;
-  margin-top: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .nav li {
   float: left;
-  width: 100%;
+  width: 25%;
   height: 25px;
   font-size: 1.5em;
-  line-height: 100%;
-  transition: 300ms;
-  padding-bottom: 5px;
+  transition: 250ms;
+  color: white;
+  /*margin-bottom: 10px;*/
+}
+
+.nav li p {
+  font-size: .5em;
+  transform: 250ms;
 }
 
 .nav li:hover {
-  color: #BFD8D7;
   transform: scale(1.1);
-}
-
-.biographyNav,
-.resumeNav,
-.codepenNav,
-.contactNav {
-  color: white;
 }
 
 .nav .selected {
@@ -103,7 +99,7 @@ a {
 
 .pageWrapper {
   float: left;
-  margin-top: 225px;
+  margin-top: 100px;
   width: 100vw;
   margin-bottom: 50px;
   overflow: hidden;
@@ -121,48 +117,37 @@ a {
 }
 
 .websec {
-  padding: 200px 0;
+  padding: 50px 0;
   width: 100%;
   margin: 40px 0;
   box-sizing: border-box;
   font-size: 1em;
   float: left;
   position: relative;
+  transition: 250ms;
 }
 
-.websec h3,
-.websec p {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); /*perfectly center*/
-  left: 0;
-  font-size: 1em;
-  transition: 1000ms;
-  width: 100%;
-  float: left;
+.websec:hover {
+  background-color: white;
+}
+
+.websec i {
+  padding-bottom: 20px;
 }
 
 .websec h3 {
   font-size: 2em;
-  color: black;
-}
-
-.websec p {
-  opacity: 0;
-  line-height: 1em;
-}
-
-.websec:hover {
-  font-size: 4em;
-  color: black;
 }
 
 .websec:hover h3 {
-  opacity: 0;
+  transform: scale(1.2);
 }
 
-.websec:hover p {
-  opacity: 1;
+.websec h3,
+.websec p {
+  transition: 250ms;
+  width: 100%;
+  float: left;
 }
 
 .websec li {
@@ -170,42 +155,50 @@ a {
 }
 
 #homeHeader {
-  background-color: #BFD8D7;
+  background-image: url("https://c1.staticflickr.com/6/5282/5191389594_6fd1ed2549_b.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  padding: 200px 0;
+  height: 400px;
   margin: 40px 0;
   float: left;
-  font-size: 2em;
-  position: relative;
+  font-size: 1.5em;
   color: black;
+  position: relative;
+}
+
+.homeHeaderMask {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: #BFD8D7;
+  opacity: .9;
+  z-index: 1;
 }
 
 #homeIntro {
   position: absolute;
-  top: 50%;
   width: 100%;
-  transform: translateY(-50%); /*perfectly center*/
+  margin-top: 75px;
   transition: 1000ms;
   font-size: 2em;
+  float: left;
+  margin-bottom: 20px;
+  z-index: 2;
 }
 
 #homeDesc {
-  opacity: 0;
   position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%); /*perfectly center*/
+  top: 40%;
+  height: 50%;
+  width: 90%;
+  margin-left: 5%;
+  float: left;
   transition: 1000ms;
-}
-
-#homeHeader:hover #homeIntro {
-  opacity: 0;
-  font-size: 3em;
-  line-height: 2em;
-}
-
-#homeHeader:hover #homeDesc {
-  opacity: 1;
+  line-height: 1.5em;
+  z-index: 2;
 }
 
 .biography {
@@ -301,15 +294,28 @@ a {
   float: left;
   background-color: #BFD8D7;
   margin: 20px 0;
-  font-size: 2em;
   line-height: 1.5em;
+  font-size: 1.2em;
   color: black;
   height: 225px;
-  position: relative;
+  transition: 250ms;
+}
+
+.bioSec:hover {
+  background-color: white;
+}
+
+.bioSec:hover .bioSecHeader {
+  transform: scale(1.1);
+}
+
+.shellfieWrapper {
+  width: 100%;
+  float: left;
 }
 
 #shellfie {
-  height: 400px;
+  height: 300px;
   border-radius: 100%;
   margin: 25px 0;
   transition: 250ms;
@@ -320,37 +326,23 @@ a {
 }
 
 .bioSecHeader {
-  position: absolute;
   width: 100%;
-  height: 100%;
-  font-size: 1.5em;
-  transition: 1000ms;
+  height: 50px;
+  margin-top: 40px;
+  font-size: 2em;
+  transition: 250ms;
 }
 
 .bioSecHeader h2 {
-  line-height: 225px;
   transition: 1000ms;
 }
 
 .bioSecContent {
-  position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%); /*perfectly center*/
 }
 
 .bioSec p {
-  opacity: 0;
   transition: 1000ms;
-}
-
-.bioSec:hover h2 {
-  opacity: 0;
-  font-size: 2.5em;
-}
-
-.bioSec:hover p {
-  opacity: 1;
 }
 
 /*CONTACT*/
@@ -364,7 +356,6 @@ a {
 .contactWrapper h3 {
   font-size: 2em;
   color: black;
-  /*text-shadow: 1px 1px 5px black;*/
   padding: 10px 0;
 }
 
@@ -417,7 +408,7 @@ a {
 
 .fieldWrapper {
   width: 60%;
-  margin: 30px 20%;
+  margin: 20px 20%;
   float: left;
   height: 40px;
   overflow: hidden;
@@ -449,6 +440,19 @@ a {
 .fieldWrapper input:focus {
   outline: none;
   background-color: lightgrey;
+}
+
+.inquiry {
+  height: 100px;
+}
+
+.inquiry label {
+  padding: 30px 0;
+}
+
+.inquiry input {
+  padding: 32px 0;
+  line-height: 1em;
 }
 
 #submitFormButton {
@@ -542,9 +546,12 @@ a {
   margin: 20px 0;
   line-height: 1.5em;
   color: black;
+  transition: 250ms;
   padding: 10px 0;
-  padding-bottom: 20px;
-  transition: 1000ms;
+}
+
+.week:hover {
+  background-color: white;
 }
 
 .week:hover h2 {
@@ -555,6 +562,12 @@ a {
   font-size: 2em;
   padding: 10px 0;
   transition: 250ms;
+}
+
+.projectImg {
+  width: 80%;
+  border-radius: 10px;
+  /*padding: 10px 0;*/
 }
 
 /*FOOTER*/
@@ -580,11 +593,10 @@ footer {
 .footerLinks div {
   float: left;
   transition: 250ms;
-  margin: 5px 0;
-  height: 50px;
-  width: 50px;
+  margin: 20px 0 20px 10%;
+  height: 40px;
+  width: 40px;
   border-radius: 100%;
-  margin-left: 10%;
 }
 
 .footerLinks div:hover {
@@ -607,7 +619,6 @@ footer {
   float: left;
   background-position: center;
   background-size: contain;
-
 }
 
 .footerLinks .road2Hire:hover {
@@ -622,7 +633,7 @@ footer {
 .footerText p {
   float: right;
   color: white;
-  padding: 20px 0;
+  margin: 20px 0;
   font-size: 1.25em;
   margin-right: 10%;
 }
@@ -635,28 +646,21 @@ footer {
     height: 80px;
   }
 
-  .headerLogo {
-    margin: 5px 0 20px 0;
-  }
-
-  #homeDesc {
-    width: 70%;
-    margin-left: 15%;
-  }
-
   .pageWrapper {
-    margin-top: 150px;
-  }
-
-  .nav {
-    width: 90%;
-    margin-left: 5%;
-    padding: 0;
+    margin-top: 100px;
   }
 
   .nav li {
     margin:0px;
     width: 25%;
+  }
+
+  .nav li p {
+    font-size: 1em;
+  }
+
+  #homeDesc {
+    top: 50%;
   }
 
   .websec {
@@ -674,6 +678,10 @@ footer {
   .contactWrapper {
     width: 90%;
     margin: 0 5%;
+  }
+
+  #shellfie {
+    height: 400px;
   }
 
   #contactMe,
@@ -745,23 +753,23 @@ footer {
 
 @media screen and (min-width: 1200px) {
 
-  .nav {
+  /*HOME*/
+
+  #homeDesc {
     width: 70%;
     margin-left: 15%;
   }
 
-  /*HOME*/
-
   .websec {
-    width: 70%;
-    margin: 20px 15%;
+    width: 40%;
+    margin: 20px 0 20px 6.66%;
   }
 
   /*BIOGRAPHY*/
 
   .bioSec {
-    width: 70%;
-    margin: 20px 15%;
+    width: 40%;
+    margin: 20px 0 20px 6.66%;
   }
 
   /*RESUME*/
@@ -774,9 +782,13 @@ footer {
   /*CODEPEN*/
 
   .week {
-    width: 70%;
-    margin-left: 15%;
-    border-radius: 10px;
+    width: 40%;
+    margin: 20px 0 20px 6.66%;margin: 20px 0 20px 6.66%;
+  }
+
+  #weekLarge {
+    width: 86.66%;
+    margin-left: 6.66%;
   }
 
   /*CONTACT*/
@@ -784,6 +796,11 @@ footer {
   .contactWrapper {
     width: 70%;
     margin: 0 15%;
+  }
+
+  .fieldWrapper {
+    width: 60%;
+    margin: 20px 20%;
   }
 
   #downloadPDFButton {

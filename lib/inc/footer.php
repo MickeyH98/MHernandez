@@ -9,5 +9,6 @@
     </div>
   </div>
 </footer>
+<script src="https://use.fontawesome.com/f0d1ed4df4.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="lib/js/scripts.js"></script>

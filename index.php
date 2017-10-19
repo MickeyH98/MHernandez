@@ -12,30 +12,36 @@
 
     <div class="pageWrapper">
       <div id="homeHeader">
-      <h2 id="homeIntro">Hi, I'm Mickey</h2>
-      <h2 id="homeDesc">I'm an aspiring Front End Developer that excels in responsive, creative, and semantic web development. I'm passionate about CSS, user-friendly design, and intuitive UIs.</h2>
+        <div class="homeHeaderMask">
+        </div>
+        <h2 id="homeIntro">Hi, I'm Mickey</h2>
+        <h2 id="homeDesc">I'm an aspiring Front End Developer that excels in responsive, creative, and semantic web development. I'm passionate about CSS, user-friendly design, and intuitive UIs.</h2>
       </div>
       <div class="sectionsWrapper">
         <a href="biography.php">
         <div class="websec biography">
+          <i class="fa fa-user-circle fa-lg fa-5x" aria-hidden="true"></i>
           <h3>Biography</h3>
           <p>Learn about my life</p>
         </div>
         </a>
         <a href="resume.php">
         <div class="websec resume">
+          <i class="fa fa-file-text-o fa-lg fa-5x" aria-hidden="true"></i>
           <h3>Resume</h3>
           <p>See my work history</p>
         </div>
         </a>
         <a href="projects.php">
         <div class="websec codepen">
+          <i class="fa fa-code fa-lg fa-5x" aria-hidden="true"></i>
           <h3>Projects</h3>
           <p>Check out my code</p>
         </div>
         </a>
         <a href="contact.php">
         <div class="websec contact">
+          <i class="fa fa-envelope-open-o fa-lg fa-5x" aria-hidden="true"></i>
           <h3>Contact</h3>
           <p>Hire me!</p>
         </div>

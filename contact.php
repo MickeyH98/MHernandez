@@ -123,7 +123,7 @@ if(!empty($_POST["submit"])){ //when form submitted
 
             <div class="fieldWrapper">
               <label for="email">Email:</label>
-              <input type="text" name="email" id="email" value="<?= $email ?>"required>
+              <input type="email" name="email" id="email" value="<?= $email ?>"required>
             </div>
 
             <div class="fieldWrapper">
@@ -131,9 +131,9 @@ if(!empty($_POST["submit"])){ //when form submitted
               <input type="text" name="company" id="company" value="<?= $company ?>"required>
             </div>
 
-            <div class="fieldWrapper">
+            <div class="fieldWrapper inquiry">
               <label for="commentquestion">Inquiry:</label>
-              <input type="text" name="commentquestion" id="commentquestion" value="<?= $inquiry ?>"required>
+              <input type="textarea" rows="3" name="commentquestion" id="commentquestion" value="<?= $inquiry ?>"required>
             </div>
 
             <input type="submit" value="Submit" name="submit" id="submitFormButton">
