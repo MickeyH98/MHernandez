@@ -51,6 +51,11 @@ header {
   color: #BFD8D7;
 }
 
+.navWrapper {
+  width: 100%;
+  transition: 500ms;
+}
+
 .banner {
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
   background-color: #1C3E7F;
@@ -79,7 +84,6 @@ a {
   font-size: 1.5em;
   transition: 250ms;
   color: white;
-  /*margin-bottom: 10px;*/
 }
 
 .nav li p {
@@ -160,7 +164,7 @@ a {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 425px;
   margin: 40px 0;
   float: left;
   font-size: 1.5em;
@@ -459,20 +463,22 @@ a {
   width: 20%;
   margin-top: 40px;
   border: none;
-  background-color: white;
-  padding: 5px 0;
+  background-color: #1C3E7F;
+  color: white;
+  padding: 10px 5px;
   border-radius: 10px;
   font-size: 1.25em;
   transition: 500ms;
 }
 
 #submitFormButton:hover {
-  background-color: lightgrey;
+  background-color: grey;
+  color: black;
 }
 
 #submitFormButton:focus {
   outline: none;
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 .errorMessageWrapper {
@@ -564,10 +570,42 @@ a {
   transition: 250ms;
 }
 
+.week iframe {
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 10px;
+  display: none;
+  transition: 500ms;
+}
+
 .projectImg {
   width: 80%;
   border-radius: 10px;
   /*padding: 10px 0;*/
+}
+
+.projectButton {
+  margin-top: 20px;
+  width: 20%;
+  float: left;
+  margin-left: 20%;
+  height: 30px;
+  background-color: #1C3E7F;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  line-height: 30px;
+  transition: 250ms;
+  display: none;
+}
+
+.projectButton:hover {
+  background-color: grey;
+  color: black;
+}
+
+#ecommerce-car-dealership-link {
+  display: block;
 }
 
 /*FOOTER*/
@@ -619,6 +657,17 @@ footer {
   float: left;
   background-position: center;
   background-size: contain;
+}
+
+.gitHub {
+  background-color: white;
+  position: relative;
+}
+
+.fa-github {
+  position: absolute;
+  top: -4px;
+  left: -1px;
 }
 
 .footerLinks .road2Hire:hover {
@@ -755,6 +804,11 @@ footer {
 
   /*HOME*/
 
+  .navWrapper {
+    width: 70%;
+    margin-left: 15%;
+  }
+
   #homeDesc {
     width: 70%;
     margin-left: 15%;
@@ -781,14 +835,19 @@ footer {
 
   /*CODEPEN*/
 
-  .week {
-    width: 40%;
-    margin: 20px 0 20px 6.66%;margin: 20px 0 20px 6.66%;
+  .projectImg {
+    height: 0;
   }
 
-  #weekLarge {
-    width: 86.66%;
-    margin-left: 6.66%;
+  .week iframe {
+    width: 80%;
+    height: 0;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .projectButton {
+    display: block;
   }
 
   /*CONTACT*/

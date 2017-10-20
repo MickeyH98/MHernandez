@@ -88,10 +88,10 @@ if(!empty($_POST["submit"])){ //when form submitted
       <div class="contactWrapper">
         <div id="contactMe">
           <h2>Thanks for your interest!</h2>
-          <h3>You may email me at <a id="emailLink" href="mailto:mickeyh1998@gmail.com?subject=PortfolioInquiry">mickeyh1998@gmail.com</a></h3>
+          <h3>Email me: <a id="emailLink" href="mailto:mickeyh1998@gmail.com?subject=PortfolioInquiry">mickeyh1998@gmail.com</a></h3>
         </div>
         <div id="contactForm">
-          <h3>Contact Form</h3>
+          <h3>Get In Touch With Me Here</h3>
 
           <div class="errorMessageWrapper">
           <?php
@@ -136,7 +136,7 @@ if(!empty($_POST["submit"])){ //when form submitted
               <input type="textarea" rows="3" name="commentquestion" id="commentquestion" value="<?= $inquiry ?>"required>
             </div>
 
-            <input type="submit" value="Submit" name="submit" id="submitFormButton">
+            <input type="submit" value="Send" name="submit" id="submitFormButton">
 
           </form>
 

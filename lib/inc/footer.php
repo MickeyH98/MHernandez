@@ -3,6 +3,7 @@
     <div class="footerLinks">
       <a href="https://www.linkedin.com/in/mickey-hernandez-8b9040149/"><div class="linkedIn"></div></a>
       <a href="http://roadtohire.org/"><div class="road2Hire"></div></a>
+      <a href="https://github.com/MickeyH98"><div class="gitHub"><i class="fa fa-github fa-4x" aria-hidden="true"></i></div></a>
     </div>
     <div class="footerText">
       <p>© Mickey Hernandez 2017</p>
