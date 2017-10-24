@@ -790,7 +790,7 @@ footer {
     margin-top: 20px;
   }
 
-  #halfDiv {
+  .halfDiv {
     width: 45%;
     margin-left: 5%;
     height: 30px;

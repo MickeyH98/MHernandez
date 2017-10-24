@@ -37,32 +37,32 @@
         </ul>
 
         <h2>Experience</h2>
-        <h3 id="halfDiv">RoadToHire / Student</h3>
-        <p id="halfDiv">June 2017 - Current</p>
+        <h3 class="halfDiv">RoadToHire / Student</h3>
+        <p class="halfDiv">June 2017 - Current</p>
         <ul>
           <li>Learned several programming languages</li>
           <li>Applied tech skills to various projects</li>
           <li>Learned industry related soft skills</li>
         </ul>
 
-        <h3 id="halfDiv">QuikTrip / Store Clerk</h3>
-        <p id="halfDiv">February  2017 - June 2017</p>
+        <h3 class="halfDiv">QuikTrip / Store Clerk</h3>
+        <p class="halfDiv">February  2017 - June 2017</p>
         <ul>
           <li>Learned about convenience store business</li>
           <li>Worked in a team to provide excellent customer service</li>
           <li>Practiced time budgeting</li>
         </ul>
 
-        <h3 id="halfDiv">Jack in the Box / Shift Manager</h3>
-        <p id="halfDiv">May  2016 - February  2017</p>
+        <h3 class="halfDiv">Jack in the Box / Shift Manager</h3>
+        <p class="halfDiv">May  2016 - February  2017</p>
         <ul>
           <li>Managed and operated all aspects of restaurant</li>
           <li>Oversaw training of all new trainees</li>
           <li>Resolved any customer complaints</li>
         </ul>
 
-        <h3 id="halfDiv">Jack in the Box / Team Member</h3>
-        <p id="halfDiv">December  2015 - May 2016</p>
+        <h3 class="halfDiv">Jack in the Box / Team Member</h3>
+        <p class="halfDiv">December  2015 - May 2016</p>
         <ul>
           <li>Learned to work in a team</li>
           <li>Provided excellent customer service</li>
