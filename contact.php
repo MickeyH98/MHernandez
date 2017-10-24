@@ -118,22 +118,22 @@ if(!empty($_POST["submit"])){ //when form submitted
 
             <div class="fieldWrapper">
               <label for="name">Name:</label>
-              <input type="text" name="name" id="name" value="<?= $name ?>"required>
+              <input type="text" name="name" id="name" value="<?= $name ?>" required>
             </div>
 
             <div class="fieldWrapper">
               <label for="email">Email:</label>
-              <input type="email" name="email" id="email" value="<?= $email ?>"required>
+              <input type="email" name="email" id="email" value="<?= $email ?>" required>
             </div>
 
             <div class="fieldWrapper">
               <label for="company">Company:</label>
-              <input type="text" name="company" id="company" value="<?= $company ?>"required>
+              <input type="text" name="company" id="company" value="<?= $company ?>" required>
             </div>
 
             <div class="fieldWrapper inquiry">
               <label for="commentquestion">Inquiry:</label>
-              <input type="textarea" rows="3" name="commentquestion" id="commentquestion" value="<?= $inquiry ?>"required>
+              <input type="text" name="commentquestion" id="commentquestion" value="<?= $inquiry ?>" required>
             </div>
 
             <input type="submit" value="Send" name="submit" id="submitFormButton">

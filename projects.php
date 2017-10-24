@@ -17,7 +17,7 @@
         <p>PHP Focused Website</p>
         <div class="projectButton showHideButton">Show Preview</div>
         <div class="projectButton fullProjectButton ecommerce-car-dealership-fullButton">Full Project</div>
-        <img id="ecommerce-car-dealership" class="projectImg" src="lib/img/ecommerce-car-dealership.png">
+        <img id="ecommerce-car-dealership" class="projectImg" src="lib/img/ecommerce-car-dealership.png" alt="dealership">
         <iframe src="http://mhernandez.road2hire.ninja/MickeysImports/"></iframe>
       </div>
       </a>
@@ -27,7 +27,7 @@
         <p>Single Page React.js App</p>
         <div class="projectButton showHideButton">Show Preview</div>
         <div class="projectButton fullProjectButton number-guessing-game-fullButton">Full Project</div>
-        <img id="numberGuessingGame" class="projectImg" src="lib/img/number-guessing-game.png">
+        <img id="numberGuessingGame" class="projectImg" src="lib/img/number-guessing-game.png" alt="guessing game">
         <iframe src="http://mhernandez.road2hire.ninja/numbergame/"></iframe>
       </div>
       </a>
@@ -37,7 +37,7 @@
         <p>React.js State Manipulation Demonstration</p>
         <div class="projectButton showHideButton">Show Preview</div>
         <div class="projectButton fullProjectButton facebook-comment-app-fullButton">Full Project</div>
-        <img id="facebookCommentApp" class="projectImg" src="lib/img/facebook-comment-app.png">
+        <img id="facebookCommentApp" class="projectImg" src="lib/img/facebook-comment-app.png" alt="facebook app">
         <iframe src="http://mhernandez.road2hire.ninja/reactfacebook/"></iframe>
       </div>
       </a>
@@ -47,7 +47,7 @@
         <p>PHP Logic Example</p>
         <div class="projectButton showHideButton">Show Preview</div>
         <div class="projectButton fullProjectButton blackjack-card-game-fullButton">Full Project</div>
-        <img id="blackjackCardGame" class="projectImg" src="lib/img/blackjack-card-game.png">
+        <img id="blackjackCardGame" class="projectImg" src="lib/img/blackjack-card-game.png" alt="blackjack game">
         <iframe src="http://mhernandez.road2hire.ninja/Insane/insane.php"></iframe>
       </div>
       </a>
@@ -57,7 +57,7 @@
         <p>Uses mySQL to call a database</p>
         <div class="projectButton showHideButton">Show Preview</div>
         <div class="projectButton fullProjectButton mysql-db-calls-fullButton">Full Project</div>
-        <img id="mysqlDbCalls" class="projectImg" src="lib/img/mysql-db-calls.png">
+        <img id="mysqlDbCalls" class="projectImg" src="lib/img/mysql-db-calls.png" alt="mysql projects">
         <iframe src="http://mhernandez.road2hire.ninja/PHPFormChallenges/Challenge1/"></iframe>
       </div>
       </a>

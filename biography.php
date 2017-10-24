@@ -12,7 +12,7 @@
 
     <div class="pageWrapper">
       <div class="shellfieWrapper">
-        <img id="shellfie" src="lib/img/shellfie.jpg">
+        <img id="shellfie" src="lib/img/shellfie.jpg" alt="Mickey">
       </div>
 
       <div class="bioSec earlyChildhood">

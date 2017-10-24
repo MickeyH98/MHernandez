@@ -581,14 +581,12 @@ a {
 .projectImg {
   width: 80%;
   border-radius: 10px;
-  /*padding: 10px 0;*/
 }
 
 .projectButton {
   margin-top: 20px;
-  width: 20%;
+  width: 15%;
   float: left;
-  margin-left: 20%;
   height: 30px;
   background-color: #1C3E7F;
   color: white;
@@ -597,11 +595,20 @@ a {
   line-height: 30px;
   transition: 250ms;
   display: none;
+  padding: 5px 0;
 }
 
 .projectButton:hover {
   background-color: grey;
   color: black;
+}
+
+.showHideButton {
+  margin-left: 30%;
+}
+
+.fullProjectButton {
+  margin-left: 10%;
 }
 
 #ecommerce-car-dealership-link {
